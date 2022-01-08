@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ealeynaelmas.firstandroidapp" >
+    package="com.ealeynaelmas.firstandroidapp">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FirstAndroidApp" >
+        android:theme="@style/Theme.FirstAndroidApp">
+        <activity
+            android:name=".AllRezervations"
+            android:exported="false" />
+        <activity
+            android:name=".ShowRezervation"
+            android:exported="false" />
+        <activity
+            android:name=".HotelLogin"
+            android:exported="false" />
         <activity
             android:name=".AddHotel"
             android:exported="false" />
@@ -24,7 +33,7 @@
         <activity
             android:name=".HotelListActivity"
             android:exported="false" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

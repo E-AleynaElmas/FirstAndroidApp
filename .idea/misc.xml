@@ -4,12 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_add_hotel.xml" value="0.264" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_all_rezervations.xml" value="0.176" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_hotel.xml" value="0.2" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_hotel_login.xml" value="0.16" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_profile.xml" value="0.176" />
-        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_rezervation.xml" value="0.1" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_rezervation.xml" value="0.4" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/activity_show_rezervation.xml" value="0.264" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/hotel_list.xml" value="0.264" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/hotelview.xml" value="0.2" />
+        <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/FirstAndroidApp/app/src/main/res/layout/rezervationview.xml" value="0.264" />
         <entry key="..\:/KotlinAndroidProjects/FirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/KotlinAndroidProjects/app/src/main/res/layout/activity_main.xml" value="0.24094202898550723" />
       </map>
