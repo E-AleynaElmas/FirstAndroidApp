@@ -10,7 +10,6 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:text="X OTEL"
         android:textColor="#9C27B0"
         android:textSize="30sp"
@@ -20,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/nameSurname"
         android:layout_width="153dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -28,16 +27,18 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelName2"
+        app:layout_constraintEnd_toStartOf="@+id/xNameSurname"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/hotelName2"
+        android:id="@+id/xNameSurname"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,19 +52,21 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCity"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintEnd_toStartOf="@+id/xCheckInDate"
+        app:layout_constraintTop_toBottomOf="@+id/nameSurname" />
 
     <EditText
-        android:id="@+id/hotelCity"
+        android:id="@+id/xCheckInDate"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelName2" />
+        app:layout_constraintTop_toBottomOf="@+id/xNameSurname" />
 
     <TextView
         android:id="@+id/textView36"
@@ -73,19 +76,21 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelLocation2"
+        app:layout_constraintEnd_toStartOf="@+id/xCheckOutDate"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <EditText
-        android:id="@+id/hotelLocation2"
+        android:id="@+id/xCheckOutDate"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCity" />
+        app:layout_constraintTop_toBottomOf="@+id/xCheckInDate" />
 
     <TextView
         android:id="@+id/textView37"
@@ -95,19 +100,45 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCost2"
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <EditText
-        android:id="@+id/hotelCost2"
+        android:id="@+id/xPersonNumber"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelLocation2" />
+        app:layout_constraintTop_toBottomOf="@+id/xCheckOutDate" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:text="Çocuk Sayısı"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <EditText
+        android:id="@+id/xChildNumber"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xPersonNumber" />
 
     <TextView
         android:id="@+id/textView38"
@@ -117,19 +148,45 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCost2"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <EditText
-        android:id="@+id/hotelCost3"
+        android:id="@+id/xEPosta"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCost2" />
+        app:layout_constraintTop_toBottomOf="@+id/xChildNumber" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:text="İrtibat No"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <EditText
+        android:id="@+id/xNo"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xEPosta" />
 
     <TextView
         android:id="@+id/textView39"
@@ -139,19 +196,21 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCost2"
-        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <EditText
-        android:id="@+id/hotelCost4"
+        android:id="@+id/xPersonNameSurname"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCost3" />
+        app:layout_constraintTop_toBottomOf="@+id/xNo" />
 
     <TextView
         android:id="@+id/textView40"
@@ -161,19 +220,21 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCost2"
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
         app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <EditText
-        android:id="@+id/hotelCost5"
+        android:id="@+id/xPersonTC"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCost4" />
+        app:layout_constraintTop_toBottomOf="@+id/xPersonNameSurname" />
 
     <TextView
         android:id="@+id/textView41"
@@ -183,19 +244,21 @@
         android:textColor="#000"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/hotelCost2"
+        app:layout_constraintEnd_toStartOf="@+id/xPersonNumber"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <EditText
-        android:id="@+id/hotelCost6"
+        android:id="@+id/xPersonNo"
         android:layout_width="235dp"
         android:layout_height="45dp"
         android:layout_marginEnd="10dp"
-        android:inputType="text"
+        android:clickable="true"
+        android:editable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCost5" />
+        app:layout_constraintTop_toBottomOf="@+id/xPersonTC" />
 
     <Button
         android:id="@+id/button8"
@@ -210,11 +273,10 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#B896BD"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.822"
+        android:onClick="setDisable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView41"
         app:srcCompat="@android:drawable/ic_menu_save" />
@@ -223,10 +285,12 @@
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="130dp"
         android:backgroundTint="#B896BD"
-        app:layout_constraintTop_toBottomOf="@+id/hotelCost6"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="218dp" />
+        android:onClick="setEnable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xPersonNo"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

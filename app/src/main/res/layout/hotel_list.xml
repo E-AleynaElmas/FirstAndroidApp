@@ -25,7 +25,7 @@
         android:background="#FFFFFF">
 
         <LinearLayout
-            android:id="@+id/myLayout"
+            android:id="@+id/myLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

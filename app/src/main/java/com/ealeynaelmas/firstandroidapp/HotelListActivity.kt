@@ -5,15 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.LinearLayout
-import android.widget.ListView
 import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.hotel_list.*
-import kotlinx.android.synthetic.main.hotelview.*
 import kotlinx.android.synthetic.main.hotelview.view.*
-import kotlin.math.cos
 
 class HotelListActivity : AppCompatActivity() {
     var database = Firebase.firestore
@@ -40,13 +36,13 @@ class HotelListActivity : AppCompatActivity() {
 
     fun createHotelGroup(city:String){
         database.collection("Hotels")
-            .whereEqualTo("Sehir", "Duzce")
+            .whereEqualTo("Sehir", city)
             .get()
             .addOnSuccessListener { documents ->
                 for (document in documents) {
                     println("${document.id} => ${document.data["İsim"]}")
                     var view: View = LayoutInflater.from(this).inflate(R.layout.hotelview, null);
-                    myLayout.addView(view);
+                    myLayout2.addView(view);
                     view.hotelName.text = document.data["İsim"].toString()
                     view.cost.text = document.data["Fiyat"].toString() + "tl"
                     view.location.text = document.data["Konum"].toString()

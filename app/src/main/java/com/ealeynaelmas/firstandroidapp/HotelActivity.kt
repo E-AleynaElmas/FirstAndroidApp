@@ -43,6 +43,7 @@ class HotelActivity : AppCompatActivity() {
                 var document = task.result
 
                 RezervationData.rezervation.rhotelname = document!!.data!!["İsim"].toString();
+                RezervationData.rezervation.rhotellicanceno = document!!.data!!["RuhsatNo"].toString().toLong();
 
                 hotelHeader.text = document!!.data!!["İsim"].toString()
                 hotelCost.text = document!!.data!!["Fiyat"].toString() + "TL"

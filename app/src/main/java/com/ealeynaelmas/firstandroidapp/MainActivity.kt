@@ -71,8 +71,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun loadAddHotelPage(view : View){
-        val intent = Intent(applicationContext, AddHotel ::class.java)
+    fun loadHotelLoginPage(view : View){
+        val intent = Intent(applicationContext, HotelLogin ::class.java)
         startActivity(intent)
     }
 

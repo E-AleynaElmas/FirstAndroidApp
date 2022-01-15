@@ -11,7 +11,7 @@
       android:id="@+id/button4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:onClick="loadMainPage"
+      android:onClick="loadMainPageView"
       android:text="Anasayfa"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -21,12 +21,12 @@
       android:id="@+id/button7"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="5dp"
+      android:layout_marginTop="30dp"
       android:onClick="shareImage"
       android:text="Otel Ekle"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/DocumentNo" />
+      app:layout_constraintTop_toBottomOf="@+id/Attribute6" />
 
   <TextView
       android:id="@+id/textView24"
@@ -48,7 +48,7 @@
   <TextView
       android:id="@+id/textView20"
       android:layout_width="124dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginStart="25dp"
       android:text="Otel İsmi"
       android:textColor="#000"
@@ -60,7 +60,7 @@
   <EditText
       android:id="@+id/HotelName"
       android:layout_width="235dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginEnd="25dp"
       android:inputType="text"
       android:minHeight="48dp"
@@ -73,7 +73,7 @@
   <TextView
       android:id="@+id/textView28"
       android:layout_width="124dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginStart="25dp"
       android:text="Otel Şehir"
       android:textColor="#000"
@@ -85,7 +85,7 @@
   <EditText
       android:id="@+id/HotelCity"
       android:layout_width="235dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginEnd="25dp"
       android:inputType="text"
       android:minHeight="48dp"
@@ -98,7 +98,7 @@
   <TextView
       android:id="@+id/textView30"
       android:layout_width="124dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginStart="25dp"
       android:text="Otel Konum"
       android:textColor="#000"
@@ -110,7 +110,7 @@
   <EditText
       android:id="@+id/HotelLocation"
       android:layout_width="235dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginEnd="25dp"
       android:inputType="text"
       android:minHeight="48dp"
@@ -123,7 +123,7 @@
   <TextView
       android:id="@+id/textView31"
       android:layout_width="124dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginStart="25dp"
       android:text="Otel Fiyat"
       android:textColor="#000"
@@ -135,7 +135,7 @@
   <EditText
       android:id="@+id/HotelCost"
       android:layout_width="235dp"
-      android:layout_height="35dp"
+      android:layout_height="40dp"
       android:layout_marginEnd="25dp"
       android:inputType="text"
       android:minHeight="48dp"
@@ -368,57 +368,5 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/Attribute5" />
-
-  <TextView
-      android:id="@+id/textView33"
-      android:layout_width="124dp"
-      android:layout_height="35dp"
-      android:layout_marginStart="25dp"
-      android:layout_marginTop="10dp"
-      android:text="Otel Ruhsat Numarası"
-      android:textColor="#000"
-      android:textSize="15sp"
-      android:textStyle="bold"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/Attribute6" />
-
-  <EditText
-      android:id="@+id/LicanceNo"
-      android:layout_width="235dp"
-      android:layout_height="35dp"
-      android:layout_marginTop="10dp"
-      android:layout_marginEnd="25dp"
-      android:inputType="text"
-      android:minHeight="48dp"
-      android:textSize="16sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/Attribute6" />
-
-  <TextView
-      android:id="@+id/textView34"
-      android:layout_width="124dp"
-      android:layout_height="35dp"
-      android:layout_marginStart="25dp"
-      android:text="Turizm İşletme Belge No"
-      android:textColor="#000"
-      android:textSize="15sp"
-      android:textStyle="bold"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView33" />
-
-  <EditText
-      android:id="@+id/DocumentNo"
-      android:layout_width="235dp"
-      android:layout_height="35dp"
-      android:layout_marginEnd="25dp"
-      android:inputType="text"
-      android:minHeight="48dp"
-      android:textSize="16sp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toEndOf="@+id/textView29"
-      app:layout_constraintTop_toBottomOf="@+id/LicanceNo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

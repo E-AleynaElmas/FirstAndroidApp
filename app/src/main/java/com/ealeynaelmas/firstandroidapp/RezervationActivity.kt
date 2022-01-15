@@ -37,6 +37,8 @@ class RezervationActivity : AppCompatActivity() {
         if(!checkAnyEmpty()) {
             val postHashMap = hashMapOf<String, Any>()
             postHashMap.put("OtelIsmi", RezervationData.rezervation.rhotelname)
+            postHashMap.put("OtelRuhsatNo", RezervationData.rezervation.rhotellicanceno)
+
             postHashMap.put("KisiSayisi", RezervationData.rezervation.rpersoncount)
             postHashMap.put("CocukSayisi", RezervationData.rezervation.rchilcount)
             postHashMap.put("GirisTarih", RezervationData.rezervation.rcheckindate)

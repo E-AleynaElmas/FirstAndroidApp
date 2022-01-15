@@ -38,13 +38,12 @@ class AddHotel : AppCompatActivity() {
         database = FirebaseFirestore.getInstance()
     }
 
-    fun loadMainPage(view : View){
-        val intent = Intent(applicationContext, MainActivity ::class.java)
-        startActivity(intent)
+    fun loadMainPageView(view : View){
+        loadMainPage()
     }
 
-    fun reload(){
-        val intent = Intent(applicationContext, AddHotel ::class.java)
+    fun loadMainPage(){
+        val intent = Intent(applicationContext, MainActivity ::class.java)
         startActivity(intent)
     }
 
@@ -185,8 +184,8 @@ class AddHotel : AppCompatActivity() {
         val postHashMap = hashMapOf<String, Any>()
         postHashMap.put("Sehir", HotelCity.text.toString())
         postHashMap.put("İsim", HotelName.text.toString())
-        postHashMap.put("RuhsatNo", LicanceNo.text.toString().toLong())
-        postHashMap.put("BelgeNo", DocumentNo.text.toString().toLong())
+        postHashMap.put("RuhsatNo", HotelData.hotelData.hlicanceno)
+        postHashMap.put("BelgeNo", HotelData.hotelData.hdocumentno)
         postHashMap.put("Fiyat", HotelCost.text.toString().toInt())
         postHashMap.put("Konum", HotelLocation.text.toString())
 
@@ -205,7 +204,7 @@ class AddHotel : AppCompatActivity() {
         database.collection("Hotels").add(postHashMap).addOnCompleteListener{task ->
             if(task.isSuccessful){
                 println("basarili")
-                reload()
+                loadMainPage()
             }
         }.addOnFailureListener{exception->
             Toast.makeText(applicationContext, exception.localizedMessage, Toast.LENGTH_LONG).show()

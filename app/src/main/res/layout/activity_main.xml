@@ -189,8 +189,8 @@
         android:layout_width="104dp"
         android:layout_height="89dp"
         android:layout_marginTop="20dp"
-        android:onClick="loadAddHotelPage"
-        android:text="Otel Ekle"
+        android:onClick="loadHotelLoginPage"
+        android:text="Otel Giriş"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SearchButton" />
